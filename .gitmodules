@@ -1,0 +1,9 @@
+[submodule "rione_msgs"]
+	path = rione_msgs
+	url = https://github.com/rionehome/rione_msgs
+[submodule "follow_me"]
+	path = follow_me
+	url = https://github.com/rionehome/follow_me
+[submodule "turtlebot_bringup"]
+	path = turtlebot_bringup
+	url = https://github.com/ItoMasaki/turtlebot_bringup
