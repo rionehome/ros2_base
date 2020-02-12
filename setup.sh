@@ -10,7 +10,7 @@ if [ "${branch}" = "* ros2/master" ]; then
     git pull origin ros2/master
 else
     echo "Switch branches and then pull"
-    git checkout -b ros2/master
+    git checkout ros2/master
     git pull origin ros2/master
 fi
 
@@ -22,7 +22,7 @@ if [ "${branch}" = "* ros2/master" ]; then
     git pull origin ros2/master
 else
     echo "Switch branches and then pull"
-    git checkout -b ros2/master
+    git checkout ros2/master
     git pull origin ros2/master
 fi
 
@@ -34,7 +34,7 @@ if [ "${branch}" = "* ${bringup_branch}" ]; then
     git pull origin ${bringup_branch}
 else
     echo "Switch branches and then pull"
-    git checkout -b ${bringup_branch}
+    git checkout ${bringup_branch}
     git pull origin ${bringup_branch}
 fi
 
