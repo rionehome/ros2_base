@@ -42,4 +42,4 @@ cd ..
 
 colcon build
 
-source ./install/setup.bash
+source install/setup.bash
