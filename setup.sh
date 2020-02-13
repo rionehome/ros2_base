@@ -2,42 +2,20 @@
 
 bringup_branch="bug_fix"
 
+git clone https://github.com/rionehome/follow_me.git
 cd follow_me
-branch=$(git branch --contains=HEAD)
-echo ${branch}
-if [ "${branch}" = "* ros2/master" ]; then
-    echo "pull!"
-    git pull origin ros2/master
-else
-    echo "Switch branches and then pull"
-    git checkout ros2/master
-    git pull origin ros2/master
-fi
+git checkout ros2/master
+cd ..
 
-cd ../rione_msgs
-branch=$(git branch --contains=HEAD)
-echo ${branch}
-if [ "${branch}" = "* ros2/master" ]; then
-    echo "pull!"
-    git pull origin ros2/master
-else
-    echo "Switch branches and then pull"
-    git checkout ros2/master
-    git pull origin ros2/master
-fi
+git clone https://github.com/rionehome/rione_msgs.git
+cd rione_msgs
+git checkout ros2/master
+cd ..
 
-cd ../turtlebot_bringup
-branch=$(git branch --contains=HEAD)
-echo ${branch}
-if [ "${branch}" = "* ${bringup_branch}" ]; then
-    echo "pull!"
-    git pull origin ${bringup_branch}
-else
-    echo "Switch branches and then pull"
-    git checkout ${bringup_branch}
-    git pull origin ${bringup_branch}
-fi
 
+git clone https://github.com/rionehome/turtlebot_bringup.git
+cd turtlebot_bringup
+git checkout $bringup_branch
 cd ..
 
 colcon build
