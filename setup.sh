@@ -1,7 +1,7 @@
 #!/bin/bash
 followme_branch="ros2/master"
-msg_branch="ros2/master"
-bringup_branch="bug_fix"
+msg_branch="ros2/develop"
+bringup_branch="master"
 ydlider_branch="master"
 locationreg_branch="master"
 turn_branch="master"
@@ -42,7 +42,7 @@ else
     git pull origin ${bringup_branch}
 fi
 
-cd ../ydlider_ros2
+cd ../ydlidar_ros2
 branch=$(git branch --contains=HEAD)
 echo ${branch}
 if [ "${branch}" = "* ${ydlider_branch}" ]; then
