@@ -15,4 +15,4 @@
 	url = https://github.com/rionehome/location_register
 [submodule "turn_robot"]
 	path = turn_robot
-	url = https://github.com/ItoMasaki/turn_robot
+	url = https://github.com/rionehome/turn_robot
