@@ -1,9 +1,9 @@
 #!/bin/bash
-followme_branch="ros2/master"
-msg_branch="ros2/develop"
+followme_branch="alien"
+msg_branch="alien"
 bringup_branch="master"
 ydlider_branch="master"
-locationreg_branch="master"
+locationreg_branch="alien"
 turn_branch="master"
 
 cd follow_me
