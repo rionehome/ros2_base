@@ -5,6 +5,7 @@ bringup_branch="master"
 ydlider_branch="master"
 locationreg_branch="master"
 turn_branch="master"
+converter_branch="master"
 
 cd follow_me
 branch=$(git branch --contains=HEAD)
@@ -76,6 +77,19 @@ else
     echo "Switch branches and then pull"
     git checkout ${turn_branch}
     git pull origin ${turn_branch}
+fi
+
+# converter
+cv ../converter
+branch=$(git branch --contains=HEAD)
+echo ${branch}
+if [ "${branch}" = "* ${converter_branch}" ]; then
+    echo "pull!"
+    git pull origin ${converter_branch}
+else
+    echo "Switch branches and then pull"
+    git checkout ${converter_branch}
+    git pull origin ${converter_branch}
 fi
 
 cd ..
