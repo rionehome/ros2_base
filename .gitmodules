@@ -19,3 +19,6 @@
 [submodule "converter"]
 	path = converter
 	url = https://github.com/rionehome/converter
+[submodule "create_kobuki_rules"]
+	path = create_kobuki_rules
+	url = https://github.com/ItoMasaki/create_kobuki_rules
